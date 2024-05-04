@@ -1,5 +1,5 @@
 <script>
-	import Scroller from '@sveltejs/svelte-scroller';
+	import Scroller from '/Users/makhansacko/Documents/Sahel Analytics/waste-stock-blog/interactive-blog/node_modules/@sveltejs/svelte-scroller/Scroller.svelte';
 	import Introduction from './lib/Introduction.svelte';
 	import DraggableLabel from './lib/DraggableLabel.svelte';
 	import MapComponent from './lib/MapComponent.svelte';
