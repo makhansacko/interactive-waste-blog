@@ -2,8 +2,10 @@
     import { onMount } from 'svelte';
     import mapboxgl from 'mapbox-gl';
     import 'mapbox-gl/dist/mapbox-gl.css';
+    // @ts-ignore
     import * as d3 from 'd3';
     import * as THREE from 'three';
+    // @ts-ignore
     import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
     let map;
@@ -14,6 +16,7 @@
 
     mapboxgl.accessToken = 'pk.eyJ1IjoibWFraGFuc2Fja28iLCJhIjoiY2xyNzdveXk1MmF2cjJtbmVtc2xmZ2g1NyJ9.OT8LQZf8KpKBm0HBK7Fpuw'
 
+    // @ts-ignore
     onMount(async() => {
         map = new mapboxgl.Map({
             container: 'map',
@@ -47,10 +50,12 @@
                 this.scene = new THREE.Scene();
 
                 const directionalLight = new THREE.DirectionalLight(0xffffff, 4.0);
+                // @ts-ignore
                 directionalLight.position.set(0, -70, 100).normalize();;
                 this.scene.add(directionalLight);
 
                 const directionalLight2 = new THREE.DirectionalLight(0xffffff, 4.0);
+                // @ts-ignore
                 directionalLight2.position.set(0, 70, 100).normalize();
                 this.scene.add(directionalLight2);
 
