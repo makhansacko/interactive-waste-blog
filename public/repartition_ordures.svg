@@ -1,0 +1,68 @@
+<svg height="700" width="1000" xmlns="http://www.w3.org/2000/svg">
+<title>Your Diagram Title</title>
+<!-- Generated with SankeyMATIC: 5/3/2024, 12:34:59 PM -->
+<rect height="700" width="1000" fill="#ffffff"></rect>
+<g transform="translate(157.04191,18)">
+<g id="sankey_flows">
+<path id="flow0" d="M12 118.45994v333L346.16121 450.14395v-333z" fill="#999999" stroke-width="0.5" stroke="#999999" opacity="0.45"><title>Total déchets solides → Déchets ménagers: 99%</title></path>
+<path id="flow3" d="M358.16121 202.91667C525.24182 202.91667 525.24182 126.89773 692.32242 126.89773" fill="none" stroke-width="171.54545" stroke="#FB8C00" opacity="0.45"><title>Déchets ménagers → Poussière: 51%</title></path>
+<path id="flow4" d="M358.16121 318.12122C525.24182 318.12122 525.24182 324.35227 692.32242 324.35227" fill="none" stroke-width="58.86364" stroke="#81C784" opacity="0.45"><title>Déchets ménagers → Déchets végétaux: 17.5%</title></path>
+<path id="flow5" d="M358.16121 376.98486C525.24182 376.98486 525.24182 465.46591 692.32242 465.46591" fill="none" stroke-width="58.86364" stroke="#827717" opacity="0.45"><title>Déchets ménagers → Reste de cuisine: 17.5%</title></path>
+<path id="flow6" d="M358.16121 428.28031C525.24182 428.28031 525.24182 599.01136 692.32242 599.01136" fill="none" stroke-width="43.72727" stroke="#B39DDB" opacity="0.45"><title>Déchets ménagers → Autres: 13%</title></path>
+<path id="flow2" d="M12 453.81449C152.08061 453.81449 152.08061 615.99849 292.16121 615.99849" fill="none" stroke-width="2.01818" stroke="#999999" opacity="0.45"><title>Total déchets solides → Déchets industriels: 0.6%</title></path>
+<path id="flow1" d="M12 452.13267C146.08061 452.13267 146.08061 534.06667 280.16121 534.06667" fill="none" stroke-width="1.34545" stroke="#999999" opacity="0.45"><title>Total déchets solides → Déchets hospitaliers: 0.4%</title></path>
+</g>
+<g id="sankey_nodes">
+<g class="node">
+<rect id="r0" class="for_r0" x="0" y="118.45994" height="336.36364" width="12" fill="#56799f" fill-opacity="1"><title>Total déchets solides:
+100%</title></rect>
+</g>
+<g class="node">
+<rect id="r1" class="for_r1" x="346.16121" y="117.14395" height="333" width="12" fill="#56799f" fill-opacity="1"><title>Déchets ménagers:
+99%</title></rect>
+</g>
+<g class="node">
+<rect id="r2" class="for_r2" x="346.16121" y="532.39395" height="1.34545" width="12" fill="#56799f" fill-opacity="1" transform="translate(-66,1)"><title>Déchets hospitaliers:
+0.4%</title></rect>
+</g>
+<g class="node">
+<rect id="r3" class="for_r3" x="346.16121" y="615.9894" height="2.01818" width="12" fill="#56799f" fill-opacity="1" transform="translate(-54,-1)"><title>Déchets industriels:
+0.6%</title></rect>
+</g>
+<g class="node">
+<rect id="r4" class="for_r4" x="692.32242" y="41.125" height="171.54545" width="12" fill="#56799f" fill-opacity="1"><title>Poussière:
+51%</title></rect>
+</g>
+<g class="node">
+<rect id="r5" class="for_r5" x="692.32242" y="294.92045" height="58.86364" width="12" fill="#56799f" fill-opacity="1"><title>Déchets végétaux:
+17.5%</title></rect>
+</g>
+<g class="node">
+<rect id="r6" class="for_r6" x="692.32242" y="436.03409" height="58.86364" width="12" fill="#56799f" fill-opacity="1"><title>Reste de cuisine:
+17.5%</title></rect>
+</g>
+<g class="node">
+<rect id="r7" class="for_r7" x="692.32242" y="577.14773" height="43.72727" width="12" fill="#56799f" fill-opacity="1"><title>Autres:
+13%</title></rect>
+</g>
+</g>
+<g id="sankey_labels" font-family="sans-serif" font-size="16px" fill="#000000">
+<text text-anchor="middle" x="342.95809" y="677" font-size="12px" font-weight="400" fill="#336781">Made at SankeyMATIC.com</text>
+<rect id="label0_bg" class="for_r0" x="-145.04192" y="266.11675" width="143.40922" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label0" class="for_r0" text-anchor="end" x="-6.29754" y="286.64176" font-weight="400" font-size="14.4px" dy="-5.125">Total déchets solides<tspan x="-6.29754" dy="19.32" font-weight="400" font-size="17.6px">100%</tspan></text>
+<rect id="label1_bg" class="for_r1" x="287.06279" y="263.11895" width="130.59672" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label1" class="for_r1" text-anchor="middle" x="352.16121" y="283.64395" font-weight="400" font-size="14.4px" dy="-5.125">Déchets ménagers<tspan x="352.16121" dy="19.32" font-weight="400" font-size="17.6px">99%</tspan></text>
+<rect id="label2_bg" class="for_r2" x="359.7939" y="512.54165" width="139.39359" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(-66,1)"></rect>
+<text id="label2" class="for_r2" text-anchor="start" x="364.45875" y="533.06667" font-weight="400" font-size="14.4px" dy="-5.125" transform="translate(-66,1)">Déchets hospitaliers<tspan x="364.45875" dy="19.32" font-weight="400" font-size="17.6px">0.4%</tspan></text>
+<rect id="label3_bg" class="for_r3" x="359.7939" y="596.47347" width="131.38578" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(-54,-1)"></rect>
+<text id="label3" class="for_r3" text-anchor="start" x="364.45875" y="616.99849" font-weight="400" font-size="14.4px" dy="-5.125" transform="translate(-54,-1)">Déchets industriels<tspan x="364.45875" dy="19.32" font-weight="400" font-size="17.6px">0.6%</tspan></text>
+<rect id="label4_bg" class="for_r4" x="705.95509" y="106.37273" width="73.76859" height="41.12" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label4" class="for_r4" text-anchor="start" x="710.61996" y="126.89773" font-weight="400" font-size="14.4px" dy="-5.125">Poussière<tspan x="710.61996" dy="19.32" font-weight="400" font-size="17.6px">51%</tspan></text>
+<rect id="label5_bg" class="for_r5" x="705.95509" y="303.82726" width="125.00297" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label5" class="for_r5" text-anchor="start" x="710.61996" y="324.35227" font-weight="400" font-size="14.4px" dy="-5.125">Déchets végétaux<tspan x="710.61996" dy="19.32" font-weight="400" font-size="17.6px">17.5%</tspan></text>
+<rect id="label6_bg" class="for_r6" x="705.95509" y="444.94091" width="116.19047" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label6" class="for_r6" text-anchor="start" x="710.61996" y="465.46591" font-weight="400" font-size="14.4px" dy="-5.125">Reste de cuisine<tspan x="710.61996" dy="19.32" font-weight="400" font-size="17.6px">17.5%</tspan></text>
+<rect id="label7_bg" class="for_r7" x="705.95509" y="578.48635" width="51.35453" height="41.12001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label7" class="for_r7" text-anchor="start" x="710.61996" y="599.01136" font-weight="400" font-size="14.4px" dy="-5.125">Autres<tspan x="710.61996" dy="19.32" font-weight="400" font-size="17.6px">13%</tspan></text>
+</g>
+</g></svg>
