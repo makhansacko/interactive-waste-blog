@@ -1,7 +1,6 @@
 <script>
 	import Scroller from '@sveltejs/svelte-scroller/Scroller.svelte';
 	import Introduction from './lib/Introduction.svelte';
-	import DraggableLabel from './lib/DraggableLabel.svelte';
 	import MapComponent from './lib/MapComponent.svelte';
 	import 'carbon-components/css/carbon-components.min.css';
 	import ChartParagraph from './lib/ChartParagraph.svelte';
@@ -9,7 +8,7 @@
     import ModelSlider from './lib/ModelSlider.svelte';
 	import SliderParagraph from './lib/SliderParagraph.svelte';
 	import Conclusion from './lib/Conclusion.svelte';
-	
+
 	let count;
 	let index;
 	let offset;
@@ -113,13 +112,6 @@
 
 	<div>
 	<img class= "smoky-waste" src='public/smoking waste.jpg' alt="Smoking waste">
-	</div>
-
-
-	<div>
-	<DraggableLabel bind:value={top} label="top"/>
-	<DraggableLabel bind:value={threshold} label="threshold"/>
-	<DraggableLabel bind:value={bottom} label="bottom"/>
 	</div>
 
 <style>
