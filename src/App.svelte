@@ -111,7 +111,7 @@
 	<Conclusion />
 
 	<div>
-	<img class= "smoky-waste" src='public/smoking waste.jpg' alt="Smoking waste">
+	<img class= "smoky-waste" src='/smoking waste.jpg' alt="Smoking waste">
 	</div>
 
 <style>
@@ -123,7 +123,7 @@
         height: 100vh;
         text-align: center;
 		color: white;
-		background-image: url('public/image_stock.jpg'); /* Replace with your image path */
+		background-image: url('/image_stock.jpg');
         background-size: cover; /* Cover the entire area of the title screen */
         background-position: center; /* Center the image */
 		position: relative;
