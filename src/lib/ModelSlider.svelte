@@ -1,3 +1,12 @@
+<svelte:head>
+  {#each images as image (image)}
+    <link rel="preload" href="{image}" as="image">
+  {/each}
+  {#each imagesProfile as image (image)}
+    <link rel="preload" href="{image}" as="image">
+  {/each}
+</svelte:head>
+
 <script>
    import { Slider } from 'carbon-components-svelte';
 
