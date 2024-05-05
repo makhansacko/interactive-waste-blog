@@ -111,7 +111,7 @@
 	<Conclusion />
 
 	<div>
-	<img class= "smoky-waste" src='/smoking waste.jpg' alt="Smoking waste">
+	<img class= "smoky-waste" src='/smoking_	waste.jpg' alt="Smoking waste">
 	</div>
 
 <style>
