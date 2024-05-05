@@ -32,7 +32,7 @@
         à travers les six communes du district (Source: rapport étude Tokten, 2019).</p>
 
     <div class="svg-container">
-        <object type="image/svg+xml" data="public/repartition_ordures.svg" aria-label="Solid waste breakdowns">Your browser does not support SVGs</object>
+        <object type="image/svg+xml" data="/repartition_ordures.svg" aria-label="Solid waste breakdowns">Your browser does not support SVGs</object>
     </div>
 
 <p class="container bx--type-body-long-02">Au fil de notre exploration, nous avons collecté les données sur 
