@@ -49,6 +49,8 @@
        .container {
             max-width: 1000px;
             margin: 50px auto;
+            padding-left: 20px;  /* Add left padding */
+            padding-right: 20px; /* Add right padding */
        }
        
        p {
@@ -56,6 +58,8 @@
             font-size: 1.4em;
             line-height: 1.5em;
             margin: 0 0 1em 0;
+            padding-left: 20px;  /* Add left padding */
+            padding-right: 20px; /* Add right padding */
         }
 
         .img-container {
@@ -91,6 +95,8 @@
 
         .container {
             margin: 10px auto; /* Smaller margin for very small screens */
+            padding-left: 20px;  /* Add left padding */
+            padding-right: 20px; /* Add right padding */
         }
     }
     </style>

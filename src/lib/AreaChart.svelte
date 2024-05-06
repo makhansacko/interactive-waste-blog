@@ -90,9 +90,10 @@
     }
 
     .chart-container {
-        height: 100%;
+        height: auto; /* Auto height to control size dynamically */
+        max-height: 300px; /* Maximum height for the chart */
         width: 100%;
-        max-width: 950px;
+        max-width: 700px; /* Adjust max width as needed */
     }
 
     /* Media Queries for Responsive Adjustments */
@@ -103,6 +104,8 @@
 
         .chart-container {
             max-width: 90%; /* Allow the chart to fill more of the space in smaller containers */
+            max-height: 250px;
+            max-width: 85%; /* Adjust width for smaller screens */
         }
     }
 
@@ -115,6 +118,8 @@
 
         .chart-container {
             max-width: 95%; /* Almost full width on very small devices to maximize visibility */
+            max-height: 200px;
+            max-width: 90%; /* Further adjustment for very small screens */
         }
     }
 </style>

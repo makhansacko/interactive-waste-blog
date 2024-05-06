@@ -22,6 +22,8 @@
            .container {
                 max-width: 1000px;
                 margin: 50px auto;
+                padding-left: 20px;  /* Add left padding */
+                padding-right: 20px; /* Add right padding */
            }
            
            p {
@@ -36,6 +38,8 @@
         .container {
             max-width: 90%; /* Allow the container to be more fluid */
             margin: 20px auto; /* Reduced margin for smaller screens */
+            padding-left: 20px;  /* Add left padding */
+            padding-right: 20px; /* Add right padding */
         }
 
         p {
@@ -48,6 +52,8 @@
         .container {
             max-width: 85%; /* Further reduce the max width for very small screens */
             margin: 10px auto; /* Further reduced margin for very small screens */
+            padding-left: 20px;  /* Add left padding */
+            padding-right: 20px; /* Add right padding */
         }
 
         p {
