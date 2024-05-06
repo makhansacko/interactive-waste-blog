@@ -213,6 +213,7 @@
 		padding: 1em;
 		margin: 10px auto;
 		max-width: none;
+		width: 100%;
 	}
 
 	section:last-of-type {
@@ -255,7 +256,7 @@
         section {
             margin: 0 auto 20px; /* Reduced margin */
 			width: 80%;
-            margin-bottom: 200px; /* Increased space between sections */
+			margin: 0 auto 20px; /* Center and space sections */
 			padding: 10px 15px;
         }
         }
