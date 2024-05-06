@@ -100,7 +100,9 @@
 	<ChartParagraph/>
 	</div>
 
+	<div class="area-chart-container">
 	<AreaChart/>
+	</div>
 
 	<div class="bx--type-body-long-01">
 	<SliderParagraph/>
@@ -213,6 +215,11 @@
 
 	#legend {
 		padding-top: 1em;
+	}
+
+	.area-chart-container {
+		padding-top: 2em;
+		padding-bottom: 2em;
 	}
 
 	.smoky-waste {
