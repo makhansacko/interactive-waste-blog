@@ -223,7 +223,9 @@
 	#legend {
 		padding-top: 1em;
 	}
-
+	.bx--type-body-long-01 {
+    margin-bottom: 0%; /* Adjust this value as needed */
+}
 	.area-chart-container {
         padding-bottom: 25em;
 		align-items: center;
