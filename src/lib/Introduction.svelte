@@ -21,7 +21,7 @@
         visualisations servent non seulement à illustrer le problème, mais aussi à démontrer comment les diverses 
         interventions au sein du système peuvent conduire à des changements positifs.</p>
 
-    <h2 class=" container bx--type-beta-02">Les déchets solides de Bamako</h2>
+    <h3 class=" container bx--type-beta-02">Les déchets solides de Bamako</h3>
     <p class="container bx--type-body-long-02">Les déchets dans le district se composent majoritairement 
         d'ordures ménagères, qui forment 99% des déchets, avec des proportions beaucoup plus faibles de 
         déchets hospitaliers (0,4%) et industriels (0,6%). Les ordures ménagères elles-mêmes sont 
@@ -31,9 +31,9 @@
         présence d'industries et de  marchés, la composition des déchets reste relativement constante 
         à travers les six communes du district (Source: rapport étude Tokten, 2019).</p>
 
-    <div class="svg-container">
-        <object type="image/svg+xml" data="/repartition_ordures.svg" aria-label="Solid waste breakdowns">Your browser does not support SVGs</object>
-    </div>
+        <div class="img-container">
+            <img src="repartitions_stock.png" alt="Your browser does not support images or the image is broken.">
+        </div>
 
 <p class="container bx--type-body-long-02">Au fil de notre exploration, nous avons collecté les données sur 
     les sites de stockage ou dépôts de transit de déchets, éparpillés à travers les quartiers de la ville. Ces 
@@ -53,21 +53,14 @@
        
        p {
             display: block;
-            font-size: 1.7em;
+            font-size: 1.4em;
             line-height: 1.5em;
             margin: 0 0 1em 0;
         }
 
-        .svg-container {
-        width: 50%;
-        height: 670px; /* Adjust this to crop the SVG */
-        overflow: hidden;
-        margin: 0 auto;
+        .img-container {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
         }
-
-    .svg-container object {
-        width: 100%;
-        height: auto;
-        background-color: transparent;
-    }
     </style>

@@ -8,9 +8,13 @@
 </svelte:head>
 
 <script>
-   import { Slider } from 'carbon-components-svelte';
+   import { Slider, Button } from 'carbon-components-svelte';
+   import { onDestroy } from 'svelte';
 
    let sliderValue = 0;
+   let playing = false;
+    let intervalId;
+
     const images = [
         'July 15.png',
         'August 5.png',
@@ -55,6 +59,33 @@
     $: imageMainSource = images[sliderValue];
     $: imageProfileSource = imagesProfile[sliderValue];
     $: maxIndex = images.length - 1;
+
+    function togglePlay() {
+        playing = !playing;
+        if (playing) {
+            startAnimation();
+        } else {
+            stopAnimation();
+        }
+    }
+
+    function startAnimation() {
+        stopAnimation();
+        intervalId = setInterval(() => {
+            sliderValue = (sliderValue + 1) % images.length;
+        }, 400); // Change images every second
+    }
+
+    function stopAnimation() {
+        if (intervalId) {
+            clearInterval(intervalId);
+            intervalId = null;
+        }
+    }
+
+    onDestroy(() => {
+        stopAnimation();
+    });
 </script>
 
 <div class="container">
@@ -76,7 +107,8 @@
             labelText={images[sliderValue].replace('.png', '')}
             hideTextInput={false}
         />
-   
+
+        <Button kind="secondary" on:click={togglePlay}>{playing ? 'Pause' : 'Play'}</Button>   
 </div>
 
 <style>

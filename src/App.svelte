@@ -20,11 +20,11 @@
 </script>
 
 <div class="title-screen container bx--type-body-long-02">
-    <h1>Visualizing the change of volume of a stock of waste <br> in the city of Bamako <br> (Partie 1)</h1><br>
+    <h1>Perspective systémique sur les déchets solides de la ville de Bamako<br>Partie 1: Focus sur les stocks</h1><br>
     <div class="mouse">
         <div class="wheel"></div>
     </div>
-    <p><br>Scroll down to continue</p>
+    <p>Défiler vers le bas pour continuer</p>
 </div>
 
 	<div>
@@ -142,7 +142,7 @@
     }
 
 	.title-screen h1 {
-		font-size: 3.5em; /* Increase the size */
+		font-size: 2.5em; /* Increase the size */
         font-weight: bold; /* Make it bold */
     }
 
@@ -151,14 +151,14 @@
 	}
 
 	.larger-text {
-		font-size: 1.7em;
+		font-size: 1.4em;
 	}
 
 	.mouse {
-        width: 30px;
-        height: 45px;
+        width: 20px;
+        height: 35px;
         border: 2px solid black;
-        border-radius: 15px;
+        border-radius: 10px;
         position: relative;
         display: inline-block;
         margin: 0 auto;
@@ -166,8 +166,8 @@
     }
 
     .wheel {
-        width: 4px;
-        height: 10px;
+        width: 3px;
+        height: 5px;
         background: black;
         position: absolute;
         top: 10px;

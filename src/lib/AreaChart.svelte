@@ -75,16 +75,18 @@
     });
 </script>
 
-<div class="parent-container">
+<div id="parent-container" class="parent-container">
     <div bind:this={container} class="chart-container"></div>
 </div>
 
 <style>
-    .parent-container {
+    #parent-container {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 40vh;
+        padding-top: 40px;    /* Adjust as needed */
+        padding-bottom: 40px; /* Adjust as needed */
     }
 
     .chart-container {

@@ -23,7 +23,7 @@
             style: 'mapbox://styles/makhansacko/clvisej92019n01phcikyf88q',
             center: [-7.991421689638932, 12.6072221987258],
             pitch: 50,
-            zoom: 12 ,
+            zoom: 10 ,
         });
 
         // Add your 3D model here
@@ -121,7 +121,8 @@
 
             data.forEach(function(d) {
                 const marker = new mapboxgl.Marker({
-                color: index >= 2 ? getColor(d.type) : '#0a466b'
+                color: index >= 2 ? getColor(d.type) : '#0a466b',
+                scale: 0.7
             })
                     .setLngLat([+d.longitude, +d.latitude])
                     .addTo(map);
@@ -136,7 +137,7 @@
         $: if (visible && index === 3) {
         map.flyTo({
             center: [-7.991421689638932, 12.6072221987258],
-            zoom: 18,
+            zoom: 17,
             speed: 0.8, // make the flying slow
             curve: 1 // change the speed at which it zooms out
               });
@@ -150,10 +151,6 @@
         curve: 1 // Smoothness of transition
          });
         }
-
-        // Cleaning Up When Moving Sections
-        
-
 
 </script>
 <div id="map" style="width: 100%; height: 100%;" class:hidden={!visible}></div>

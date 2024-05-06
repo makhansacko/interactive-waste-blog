@@ -1,5 +1,5 @@
 <div class="container bx--type-body-long-02">
-    <h2 class=" container bx--type-beta-02">Le changement de volume du stock</h2>
+    <h3 class=" container bx--type-beta-02">Le changement de volume du stock</h3>
     <p>Entre juillet et décembre 2023, j'ai réalisé des prises de vue hebdomadaires en 
         360 degrés du stock de déchets à l'aide d'un drone. Ces images ont été utilisées 
         pour générer des modèles 3D et des modèles d'élévation numérique par photogrammétrie, 
@@ -17,7 +17,7 @@
            
            p {
                 display: block;
-                font-size: 1.7em;
+                font-size: 1.5em;
                 line-height: 1.5em;
                 margin: 0 0 1em 0;
             }

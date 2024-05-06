@@ -1,7 +1,7 @@
 <div class="container bx--type-body-long-02">
-    <h2 class=" container bx--type-beta-02">Vers un Bamako Plus Propre : Enjeux et 
+    <h3 class=" container bx--type-beta-02">Vers un Bamako Plus Propre : Enjeux et 
         Solutions pour la Gestion Durable et Inclusive des Déchets
-    </h2>
+    </h3>
     <p>Alors que Bamako s'étend, le nombre et le volume des dépôts de déchets de la ville 
         ne cessent de croître. Cette réalité soulève des questions critiques quant à l'efficacité 
         des politiques publiques actuelles, malgré leur objectif de réguler et d'améliorer 
@@ -26,7 +26,7 @@
            
            p {
                 display: block;
-                font-size: 1.7em;
+                font-size: 1.4em;
                 line-height: 1.5em;
                 margin: 0 0 1em 0;
             }
