@@ -27,6 +27,10 @@
             zoom: getZoomLevel(),
         });
 
+        window.addEventListener('resize', () => {
+        map.setZoom(getZoomLevel()); // Adjust zoom when window size changes
+    });
+
         // Add your 3D model here
         const modelOrigin = [-7.990000, 12.611119];
         const modelAltitude = 0;
@@ -109,9 +113,9 @@
     function getZoomLevel() {
             const width = window.innerWidth;
             if (width < 480) {
-                return 5; // Closer zoom for very small screens
+                return 8; // Closer zoom for very small screens
             } else if (width < 768) {
-                return 8; // Moderate zoom for small to medium screens
+                return 10; // Moderate zoom for small to medium screens
             } else {
                 return 12; // Default zoom for larger screens
             }
@@ -175,17 +179,22 @@
     }
 
     /* Media Queries for handling different screen sizes */
-    @media (max-width: 768px) {
-        /* Adjusting map height on smaller devices to ensure visibility of other page content */
+    @media (max-width: 390px) {
         #map {
-            height: 50vh; /* Half of the viewport height */
+            height: 50vh; /* Slightly reduce the height to accommodate other UI elements */
         }
     }
 
-    @media (max-width: 480px) {
-        /* Further adjustments for very small screens */
+    @media (max-width: 768px) {
         #map {
-            height: 50vh; /* Slightly more vertical space than on tablets */
+            height: 50vh; /* Standard setting for tablets and smaller devices */
+        }
+    }
+
+    /* Consider landscape mode where width is greater than height */
+    @media (max-height: 390px) {
+        #map {
+            height: 80vh; /* Increase height if the device is in landscape */
         }
     }
 </style>
