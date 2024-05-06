@@ -154,3 +154,26 @@
 
 </script>
 <div id="map" style="width: 100%; height: 100%;" class:hidden={!visible}></div>
+
+<style>
+    #map {
+        width: 100%; /* Full width to ensure it takes up all available space */
+        height: 100%; /* Full height to ensure it takes up all available vertical space */
+        position: relative; /* Position relative to allow absolute positioning inside */
+    }
+
+    /* Media Queries for handling different screen sizes */
+    @media (max-width: 768px) {
+        /* Adjusting map height on smaller devices to ensure visibility of other page content */
+        #map {
+            height: 50vh; /* Half of the viewport height */
+        }
+    }
+
+    @media (max-width: 480px) {
+        /* Further adjustments for very small screens */
+        #map {
+            height: 60vh; /* Slightly more vertical space than on tablets */
+        }
+    }
+</style>

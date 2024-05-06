@@ -90,7 +90,31 @@
     }
 
     .chart-container {
-        height: 400px;
-        width: 950px;
+        height: 100%;
+        width: 100%;
+        max-width: 950px;
+    }
+
+    /* Media Queries for Responsive Adjustments */
+    @media (max-width: 768px) {
+        #parent-container {
+            height: 50vh; /* Slightly larger height on smaller screens to accommodate the chart properly */
+        }
+
+        .chart-container {
+            max-width: 90%; /* Allow the chart to fill more of the space in smaller containers */
+        }
+    }
+
+    @media (max-width: 480px) {
+        #parent-container {
+            height: 60vh; /* Further increase the height for very small screens */
+            padding-top: 20px; /* Reduce the top padding */
+            padding-bottom: 20px; /* Reduce the bottom padding */
+        }
+
+        .chart-container {
+            max-width: 95%; /* Almost full width on very small devices to maximize visibility */
+        }
     }
 </style>

@@ -227,4 +227,47 @@
 	width: 70%;
 	margin: auto;
 	}
+
+	/* Media Queries for Responsive Adjustments */
+    @media (max-width: 768px) {
+        .title-screen h1 {
+            font-size: 2em; /* Smaller font size for smaller screens */
+        }
+
+        .larger-text {
+            font-size: 1.2em; /* Smaller text size for readability on smaller devices */
+        }
+
+        section {
+            width: auto; /* Full width for smaller screens */
+            margin: 0 10px 30em; /* Adjust margins and spacing */
+        }
+
+        [slot="background"] {
+            padding: 0.5em; /* Smaller padding for smaller screens */
+        }
+
+        .area-chart-container {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        .smoky-waste {
+            width: 100%; /* Full width for better visibility */
+        }
+    	}
+
+    	@media (max-width: 600px) {
+        .title-screen h1 {
+            font-size: 1.5em; /* Even smaller font size for very small devices */
+        }
+
+        .larger-text {
+            font-size: 1em; /* Reduce font size for very small screens */
+        }
+
+        section {
+            margin: 0 5px 20em; /* Reduce margin and spacing further */
+        }
+    }
 </style>

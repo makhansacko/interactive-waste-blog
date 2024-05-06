@@ -21,4 +21,29 @@
                 line-height: 1.5em;
                 margin: 0 0 1em 0;
             }
+
+        /* Media Queries for Responsive Adjustments */
+        @media (max-width: 768px) {
+        .container {
+            max-width: 90%; /* Allow the container to be more fluid */
+            margin: 20px auto; /* Reduced margin for smaller screens */
+        }
+
+        p {
+            font-size: 1.2em; /* Slightly smaller font size on smaller devices */
+            margin: 0 0 0.5em 0; /* Reduced bottom margin */
+        }
+        }
+
+        @media (max-width: 480px) {
+        .container {
+            max-width: 85%; /* Further reduce the max width for very small screens */
+            margin: 10px auto; /* Further reduced margin for very small screens */
+        }
+
+        p {
+            font-size: 1em; /* Even smaller font size for very small devices */
+            margin: 0 0 0.5em 0; /* Keep reduced margin */
+        }
+        }
         </style>

@@ -61,9 +61,36 @@
         .img-container {
             display: flex;
             justify-content: center;
+            flex-direction: column;
         }
+
         .repartition {
             width: 50%; /* Adjust as needed */
             height: auto; /* Maintain aspect ratio */
         }
+
+        @media (max-width: 768px) {
+        .container {
+            margin: 20px auto; /* Reduced margin for smaller screens */
+        }
+
+        p {
+            font-size: 1.2em; /* Slightly smaller font size on smaller devices */
+        }
+
+        .repartition {
+            width: 100%; /* Full width for smaller screens */
+        }
+    }
+
+    @media (max-width: 600px) {
+        p {
+            font-size: 1em; /* Even smaller font size for very small devices */
+            margin: 0.5em 0; /* Smaller vertical margins */
+        }
+
+        .container {
+            margin: 10px auto; /* Smaller margin for very small screens */
+        }
+    }
     </style>

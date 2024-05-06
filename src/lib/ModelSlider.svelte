@@ -153,4 +153,21 @@
         max-width: 100%; /* Ensures the image scales down to fit the container */
         height: auto; /* Keeps the aspect ratio */
     }
+
+    /* Media Queries for Responsive Adjustments */
+    @media (max-width: 480px) {
+        .container {
+            padding: 5px; /* Even less padding for very small screens */
+            margin: 5px; /* Less margin for very small screens */
+        }
+
+        .images-row {
+            flex-direction: column; /* Ensure vertical stacking at very small widths */
+        }
+
+        .image-container {
+            margin: 2px; /* Minimize margin to use space efficiently */
+            padding: 2px; /* Minimize padding to use space efficiently */
+        }
+    }
 </style>
