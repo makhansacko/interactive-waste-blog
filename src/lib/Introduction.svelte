@@ -46,57 +46,47 @@
 
 
     <style>
-       .container {
-            max-width: 1000px;
-            margin: 50px auto;
-            padding-left: 20px;  /* Add left padding */
-            padding-right: 20px; /* Add right padding */
-       }
-       
-       p {
-            display: block;
-            font-size: 1.4em;
-            line-height: 1.5em;
-            margin: 0 0 1em 0;
-            padding-left: 20px;  /* Add left padding */
-            padding-right: 20px; /* Add right padding */
-        }
+    .container {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding-left: 20px;  /* Ensure padding doesn't affect centering */
+        padding-right: 20px; /* Ensure padding doesn't affect centering */
+    }
+    
+    p {
+        font-size: 1.4em;
+        line-height: 1.5em;
+        margin: 0 0 1em 0;
+        padding: 0 20px; /* Padding inside paragraphs for better text alignment */
+    }
 
-        .img-container {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
+    .img-container {
+        display: flex;
+        justify-content: center; /* Centers the child elements horizontally */
+        align-items: center; /* Centers the child elements vertically, if needed */
+        flex-direction: column; /* Stack children vertically */
+    }
 
-        .repartition {
-            width: 50%; /* Adjust as needed */
-            height: auto; /* Maintain aspect ratio */
-        }
+    .repartition {
+        width: 50%; /* Relative size to its container, adjust as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
 
-        @media (max-width: 768px) {
-        .container {
-            margin: 20px auto; /* Reduced margin for smaller screens */
-        }
-
-        p {
-            font-size: 1.2em; /* Slightly smaller font size on smaller devices */
+    @media (max-width: 768px) {
+        .container, p {
+            margin: 20px auto; /* Slightly smaller margin on smaller screens */
+            font-size: 1.2em; /* Adjust font size for readability */
         }
 
         .repartition {
-            width: 100%; /* Full width for smaller screens */
+            width: 100%; /* Use full width on smaller screens */
         }
     }
 
     @media (max-width: 600px) {
         p {
-            font-size: 1em; /* Even smaller font size for very small devices */
-            margin: 0.5em 0; /* Smaller vertical margins */
-        }
-
-        .container {
-            margin: 10px auto; /* Smaller margin for very small screens */
-            padding-left: 20px;  /* Add left padding */
-            padding-right: 20px; /* Add right padding */
+            font-size: 1em; /* Smaller font size for very small devices */
+            margin: 10px auto; /* Adjust margins to fit smaller screens */
         }
     }
-    </style>
+</style>

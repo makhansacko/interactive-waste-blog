@@ -113,7 +113,7 @@
 	<Conclusion />
 
 	<div>
-	<img class= "smoky-waste" src='/smoking_	waste.jpg' alt="Smoking waste">
+	<img class= "smoky-waste" src='/smoking_waste.jpg' alt="Smoking waste">
 	</div>
 
 <style>
@@ -197,6 +197,11 @@
 	
 	[slot="foreground"] section {
 		pointer-events: all;
+        width: auto; /* Allow sections to fill the width of the viewport */
+        background-color: #455A64; /* Background color for better readability */
+        color: white; /* Text color for contrast */
+        padding: 10px 20px; /* Padding around text for better spacing */
+        margin-bottom: 400px; /* Space between sections for clarity */
 	}
 	
 	section {
@@ -219,7 +224,12 @@
 
 	.area-chart-container {
 		padding-top: 2em;
-		padding-bottom: 2em;
+        padding-bottom: 2em;
+		align-items: center;
+		justify-content: center;
+        height: 300px; /* Fixed height for consistency */
+        width: 100%; /* Full width to use the space efficiently */
+        max-width: 600px; /* Limiting max width for aesthetics */
 	}
 
 	.smoky-waste {
@@ -240,7 +250,8 @@
 
         section {
             width: auto; /* Full width for smaller screens */
-            margin: 0 10px 30em; /* Adjust margins and spacing */
+            padding: 8px 16px; /* Adjusted padding */
+			margin-bottom: 300px;
         }
 
         [slot="background"] {
@@ -248,8 +259,7 @@
         }
 
         .area-chart-container {
-            padding-top: 1em;
-            padding-bottom: 1em;
+            max-width: 90%; /* More width allowed on smaller screens */
         }
 
         .smoky-waste {
@@ -267,7 +277,9 @@
         }
 
         section {
-            margin: 0 5px 20em; /* Reduce margin and spacing further */
+            margin: 0 5px; /* Reduced margin */
+            padding: 5px 10px; /* Reduced padding */
+			margin-bottom: 200px;
         }
     }
 </style>

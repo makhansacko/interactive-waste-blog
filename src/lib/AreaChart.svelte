@@ -94,32 +94,31 @@
         max-height: 300px; /* Maximum height for the chart */
         width: 100%;
         max-width: 700px; /* Adjust max width as needed */
+        margin: auto;
     }
 
     /* Media Queries for Responsive Adjustments */
     @media (max-width: 768px) {
         #parent-container {
             height: 50vh; /* Slightly larger height on smaller screens to accommodate the chart properly */
+            padding-top: 20px; /* Reduced top padding */
+            padding-bottom: 20px; /* Reduced bottom padding */
         }
 
         .chart-container {
-            max-width: 90%; /* Allow the chart to fill more of the space in smaller containers */
-            max-height: 250px;
-            max-width: 85%; /* Adjust width for smaller screens */
+            max-width: 85%; /* Increases width usage in smaller containers */
+            max-height: 250px; /* Adjusted max height for smaller devices */        
         }
     }
 
     @media (max-width: 480px) {
         #parent-container {
             height: 60vh; /* Further increase the height for very small screens */
-            padding-top: 20px; /* Reduce the top padding */
-            padding-bottom: 20px; /* Reduce the bottom padding */
         }
 
         .chart-container {
             max-width: 95%; /* Almost full width on very small devices to maximize visibility */
             max-height: 200px;
-            max-width: 90%; /* Further adjustment for very small screens */
         }
     }
 </style>
