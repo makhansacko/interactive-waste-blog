@@ -16,10 +16,10 @@
            }
            
            p, h3 {
-                font-size: 1.5em;
+                font-size: 1.4em;
                 line-height: 1.5em;
                 margin: 0 0 1em 0;
-                padding: 0; /* Ensure there's no additional padding affecting text layout */
+                padding: 0 20px; /* Ensure there's no additional padding affecting text layout */
             }
 
             h3 {
@@ -28,24 +28,17 @@
 
         /* Media Queries for Responsive Adjustments */
         @media (max-width: 768px) {
-        .container, p, h3 {
-            max-width: 90%; /* Allow the container to be more fluid */
-            margin: 20px auto; /* Reduced margin for smaller screens */
-            padding: 0 15px; /* Adding padding for better edge spacing */
-            font-size: 1.2em; /* Slightly smaller font size on smaller devices */
+            .container, p, h3 {
+            margin: 20px auto; /* Slightly smaller margin on smaller screens */
+            font-size: 1.2em; /* Adjust font size for readability */
         }
-
-        h3 {
-            margin-bottom: 0.5em; /* Reduced bottom margin specifically for headers */
-        }
+        
     }
 
-    @media (max-width: 480px) {
-        .container, p, h3 {
-            max-width: 85%; /* Further reduce the max width for very small screens */
-            margin: 10px auto; /* Further reduced margin for very small screens */
-            padding: 0 10px; /* Adjust padding to ensure content doesn't touch the edges */
-            font-size: 1em; /* Even smaller font size for very small devices */
+    @media (max-width: 600px) {
+        p, h3 {
+            font-size: 1em; /* Smaller font size for very small devices */
+            margin: 10px auto; /* Adjust margins to fit smaller screens */
         }
     }
         </style>
