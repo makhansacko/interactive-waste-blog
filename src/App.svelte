@@ -202,8 +202,8 @@
         color: white; /* Text color for contrast */
         padding: 10px 20px; /* Padding around text for better spacing */
         margin-bottom: 400px; /* Space between sections for clarity */
-        margin-left: auto; /* Center the section horizontally */
-        margin-right: auto; /* Center the section horizontally */
+		width: 100%; /* Use full width */
+        box-sizing: border-box; /* Include padding in width calculation */
 	}
 	
 	section {
@@ -211,8 +211,8 @@
 		background-color: #455A64;
 		color: white;
 		padding: 1em;
-		margin: 0 auto 50em 0;
-		max-width: 500px;
+		margin: 10px auto;
+		max-width: none;
 	}
 
 	section:last-of-type {
@@ -253,11 +253,10 @@
 
   
         section {
-            margin: 10px auto; /* Reduced margin */
+            margin: 0 auto 20px; /* Reduced margin */
 			width: 80%;
-            padding: 5px 10px; /* Reduced padding */
-			margin: 0 auto 300px;
             margin-bottom: 200px; /* Increased space between sections */
+			padding: 10px 15px;
         }
         }
 
@@ -284,8 +283,7 @@
         }
 
         section {
-            padding: 5px 10px; /* Reduced padding */
-			margin-bottom: 200px;
+            width: 90%;
         }
     }
 </style>
