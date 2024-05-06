@@ -19,7 +19,6 @@
                 font-size: 1.4em;
                 line-height: 1.5em;
                 margin: 0 0 1em 0;
-                padding: 0 20px; /* Ensure there's no additional padding affecting text layout */
             }
 
             h3 {

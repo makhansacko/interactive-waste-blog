@@ -225,7 +225,7 @@
 	}
 
 	.area-chart-container {
-        padding-bottom: 2em;
+        padding-bottom: 25em;
 		align-items: center;
 		justify-content: center;
         height: 300px; /* Fixed height for consistency */
