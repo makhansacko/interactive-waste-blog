@@ -197,12 +197,11 @@
 	
 	[slot="foreground"] section {
 		pointer-events: all;
-        width: auto; /* Allow sections to fill the width of the viewport */
+        width: 80%; /* Allow sections to fill the width of the viewport */
         background-color: #455A64; /* Background color for better readability */
         color: white; /* Text color for contrast */
         padding: 10px 20px; /* Padding around text for better spacing */
         margin-bottom: 400px; /* Space between sections for clarity */
-		width: 80%; /* Set the width to 80% to fill the screen width appropriately */
         margin-left: auto; /* Center the section horizontally */
         margin-right: auto; /* Center the section horizontally */
 	}
