@@ -197,11 +197,14 @@
 	
 	[slot="foreground"] section {
 		pointer-events: all;
-        width: auto; /* Allow sections to fill the width of the viewport */
         background-color: #455A64; /* Background color for better readability */
         color: white; /* Text color for contrast */
         padding: 10px 20px; /* Padding around text for better spacing */
         margin-bottom: 400px; /* Space between sections for clarity */
+		width: 80%; /* Set width to 80% to fill the screen appropriately */
+        max-width: none; /* Override any max-width that could restrict the width */
+        margin-left: auto; /* Center the section horizontally */
+        margin-right: auto; /* Center the section horizontally */
 	}
 	
 	section {
@@ -277,7 +280,7 @@
         }
 
         section {
-            margin: 0 5px; /* Reduced margin */
+            margin: 0 10px; /* Reduced margin */
             padding: 5px 10px; /* Reduced padding */
 			margin-bottom: 200px;
         }
