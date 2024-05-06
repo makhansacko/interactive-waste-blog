@@ -30,10 +30,6 @@
     { group: "Waste Volume", date: "2023-12-02T00:00Z", volume: 135984 }
 ];
 
-
-
-
-
         const options = {
             axes: {
                 bottom: {

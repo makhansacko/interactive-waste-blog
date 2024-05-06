@@ -18,12 +18,24 @@
 
     // @ts-ignore
     onMount(async() => {
+        
+        function getZoomLevel() {
+            const width = window.innerWidth;
+            if (width < 480) {
+                return 14; // Closer zoom for very small screens
+            } else if (width < 768) {
+                return 12; // Moderate zoom for small to medium screens
+            } else {
+                return 10; // Default zoom for larger screens
+            }
+        }
+        
         map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/makhansacko/clvisej92019n01phcikyf88q',
             center: [-7.991421689638932, 12.6072221987258],
             pitch: 50,
-            zoom: 10 ,
+            zoom: getZoomLevel() ,
         });
 
         // Add your 3D model here
@@ -158,7 +170,7 @@
 <style>
     #map {
         width: 100%; /* Full width to ensure it takes up all available space */
-        height: 100%; /* Full height to ensure it takes up all available vertical space */
+        height: 60vh; /* Full height to ensure it takes up all available vertical space */
         position: relative; /* Position relative to allow absolute positioning inside */
     }
 
@@ -173,7 +185,7 @@
     @media (max-width: 480px) {
         /* Further adjustments for very small screens */
         #map {
-            height: 60vh; /* Slightly more vertical space than on tablets */
+            height: 50vh; /* Slightly more vertical space than on tablets */
         }
     }
 </style>
