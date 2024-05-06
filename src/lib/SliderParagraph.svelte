@@ -12,10 +12,29 @@
                 margin: 50px auto;
            }
            
-           p {
-                display: block;
-                font-size: 1.4em;
-                line-height: 1.5em;
-                margin: 0 0 1em 0;
-            }
+           p, h3 {
+        font-size: 1.4em;
+        line-height: 1.5em;
+        margin: 0 0 1em 0;
+        padding: 0 20px; /* Padding inside paragraphs for better text alignment */
+    }
+
+    h3 {
+        font-weight: bold; /* Ensure headers are bold */
+    }
+
+    @media (max-width: 768px) {
+            .container, p, h3 {
+            margin: 20px auto; /* Slightly smaller margin on smaller screens */
+            font-size: 1.2em; /* Adjust font size for readability */
+        }
+        
+    }
+
+    @media (max-width: 600px) {
+        p, h3 {
+            font-size: 1em; /* Smaller font size for very small devices */
+            margin: 10px auto; /* Adjust margins to fit smaller screens */
+        }
+    }
         </style>
