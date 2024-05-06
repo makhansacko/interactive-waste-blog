@@ -97,7 +97,6 @@
     @media (max-width: 768px) {
         #parent-container {
             height: 50vh; /* Slightly larger height on smaller screens to accommodate the chart properly */
-            padding-top: 20px; /* Reduced top padding */
             padding-bottom: 20px; /* Reduced bottom padding */
         }
 
@@ -110,6 +109,7 @@
     @media (max-width: 480px) {
         #parent-container {
             height: 60vh; /* Further increase the height for very small screens */
+            padding-bottom: 20px;
         }
 
         .chart-container {
