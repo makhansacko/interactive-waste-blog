@@ -32,7 +32,7 @@
         à travers les six communes du district (Source: rapport étude Tokten, 2019).</p>
 
         <div class="img-container">
-            <img src="repartitions_stock.png" alt="Your browser does not support images or the image is broken.">
+            <img class ="repartition" src="repartitions_stock.png" alt="Your browser does not support images or the image is broken.">
         </div>
 
 <p class="container bx--type-body-long-02">Au fil de notre exploration, nous avons collecté les données sur 
@@ -61,6 +61,9 @@
         .img-container {
             display: flex;
             justify-content: center;
-            margin: 50px 0;
+        }
+        .repartition {
+            width: 50%; /* Adjust as needed */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
