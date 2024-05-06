@@ -19,23 +19,12 @@
     // @ts-ignore
     onMount(async() => {
         
-        function getZoomLevel() {
-            const width = window.innerWidth;
-            if (width < 480) {
-                return 14; // Closer zoom for very small screens
-            } else if (width < 768) {
-                return 12; // Moderate zoom for small to medium screens
-            } else {
-                return 10; // Default zoom for larger screens
-            }
-        }
-        
         map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/makhansacko/clvisej92019n01phcikyf88q',
             center: [-7.991421689638932, 12.6072221987258],
             pitch: 50,
-            zoom: getZoomLevel() ,
+            zoom: getZoomLevel(),
         });
 
         // Add your 3D model here
@@ -117,6 +106,17 @@
 
     });
 
+    function getZoomLevel() {
+            const width = window.innerWidth;
+            if (width < 480) {
+                return 14; // Closer zoom for very small screens
+            } else if (width < 768) {
+                return 12; // Moderate zoom for small to medium screens
+            } else {
+                return 12; // Default zoom for larger screens
+            }
+        }
+
 //Functions outside onMount
         function getColor(type) {
         switch (type) {
@@ -158,7 +158,7 @@
         $: if (visible && index <= 2) {
         map.flyTo({
         center: [-7.991421689638932, 12.6072221987258], // Original center
-        zoom: 12, // Original zoom level
+        zoom: getZoomLevel(), // Original zoom level
         speed: 0.8, // Speed of transition
         curve: 1 // Smoothness of transition
          });
