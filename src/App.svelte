@@ -225,7 +225,6 @@
 	}
 
 	.area-chart-container {
-		padding-top: 2em;
         padding-bottom: 2em;
 		align-items: center;
 		justify-content: center;
