@@ -197,12 +197,12 @@
 	
 	[slot="foreground"] section {
 		pointer-events: all;
+        width: auto; /* Allow sections to fill the width of the viewport */
         background-color: #455A64; /* Background color for better readability */
         color: white; /* Text color for contrast */
         padding: 10px 20px; /* Padding around text for better spacing */
         margin-bottom: 400px; /* Space between sections for clarity */
-		width: 80%; /* Set width to 80% to fill the screen appropriately */
-        max-width: none; /* Override any max-width that could restrict the width */
+		width: 80%; /* Set the width to 80% to fill the screen width appropriately */
         margin-left: auto; /* Center the section horizontally */
         margin-right: auto; /* Center the section horizontally */
 	}
@@ -213,7 +213,8 @@
 		background-color: #455A64;
 		color: white;
 		padding: 1em;
-		margin: 0 0 50em 0;
+		margin: 0 auto 50em 0;
+		max-width: 500px;
 	}
 
 	section:last-of-type {
@@ -251,10 +252,12 @@
             font-size: 1.2em; /* Smaller text size for readability on smaller devices */
         }
 
-        section {
-            width: 80%; /* Full width for smaller screens */
-            padding: 8px 16px; /* Adjusted padding */
-			margin-bottom: 300px;
+  
+            section {
+            margin: 10px auto; /* Reduced margin */
+            padding: 5px 10px; /* Reduced padding */
+            margin-bottom: 200px; /* Increased space between sections */
+        }
         }
 
         [slot="background"] {
@@ -268,7 +271,7 @@
         .smoky-waste {
             width: 100%; /* Full width for better visibility */
         }
-    	}
+    	
 
     	@media (max-width: 600px) {
         .title-screen h1 {
@@ -280,7 +283,7 @@
         }
 
         section {
-            margin: 0 10px; /* Reduced margin */
+            margin: 0 5px; /* Reduced margin */
             padding: 5px 10px; /* Reduced padding */
 			margin-bottom: 200px;
         }
