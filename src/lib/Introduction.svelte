@@ -32,7 +32,7 @@
         à travers les six communes du district (Source: rapport étude Tokten, 2019).</p>
 
         <div class="container bx--type-body-long-02">
-            <img class ="repartition" src="repartitions_stock.png" alt="Your browser does not support images or the image is broken.">
+            <img class="repartition" src="repartitions_stock.png" alt="Stocks de déchets">
         </div>
 
 <p class="container bx--type-body-long-02">Au fil de notre exploration, nous avons collecté les données sur 
