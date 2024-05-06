@@ -241,7 +241,7 @@
 	/* Media Queries for Responsive Adjustments */
     @media (max-width: 768px) {
         .title-screen h1 {
-            font-size: 2em; /* Smaller font size for smaller screens */
+            font-size: 1.8em; /* Smaller font size for smaller screens */
         }
 
         .larger-text {
@@ -269,7 +269,7 @@
 
     	@media (max-width: 600px) {
         .title-screen h1 {
-            font-size: 1.5em; /* Even smaller font size for very small devices */
+            font-size: 1.8em; /* Even smaller font size for very small devices */
         }
 
         .larger-text {
