@@ -113,9 +113,9 @@
     function getZoomLevel() {
             const width = window.innerWidth;
             if (width < 480) {
-                return 11; // Closer zoom for very small screens
+                return 10; // Closer zoom for very small screens
             } else if (width < 768) {
-                return 11; // Moderate zoom for small to medium screens
+                return 10; // Moderate zoom for small to medium screens
             } else {
                 return 12; // Default zoom for larger screens
             }
