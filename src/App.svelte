@@ -209,7 +209,6 @@
 	
 	section {
 		height: auto;
-		width: 50vh;
 		background-color: #455A64;
 		color: white;
 		padding: 1em;
@@ -253,9 +252,11 @@
         }
 
   
-            section {
+        section {
             margin: 10px auto; /* Reduced margin */
+			width: 80%;
             padding: 5px 10px; /* Reduced padding */
+			margin: 0 auto 300px;
             margin-bottom: 200px; /* Increased space between sections */
         }
         }
@@ -283,7 +284,6 @@
         }
 
         section {
-            margin: 0 5px; /* Reduced margin */
             padding: 5px 10px; /* Reduced padding */
 			margin-bottom: 200px;
         }
