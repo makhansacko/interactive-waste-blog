@@ -249,7 +249,7 @@
         }
 
         section {
-            width: auto; /* Full width for smaller screens */
+            width: 80%; /* Full width for smaller screens */
             padding: 8px 16px; /* Adjusted padding */
 			margin-bottom: 300px;
         }
