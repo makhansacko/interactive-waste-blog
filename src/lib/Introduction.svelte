@@ -31,7 +31,7 @@
         présence d'industries et de  marchés, la composition des déchets reste relativement constante 
         à travers les six communes du district (Source: rapport étude Tokten, 2019).</p>
 
-        <div class="img-container">
+        <div class="container bx--type-body-long-02">
             <img class ="repartition" src="repartitions_stock.png" alt="Your browser does not support images or the image is broken.">
         </div>
 
