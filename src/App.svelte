@@ -229,10 +229,10 @@
 		padding-top: 1em;
 	}
 	.bx--type-body-long-01 {
-    margin-bottom: 0%; /* Adjust this value as needed */
+    margin-top: 10em; /* Adjust this value as needed */
 }
 	.area-chart-container {
-        padding-bottom: 25em;
+        padding-bottom: 10em;
 		align-items: center;
 		justify-content: center;
         height: 300px; /* Fixed height for consistency */
