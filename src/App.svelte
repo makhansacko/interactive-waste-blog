@@ -44,7 +44,7 @@
 		<MapComponent {index} visible={index >= 0 }/>
 		</div>
 
-		<div slot="foreground" style="padding: 0 0 0 70%;">
+		<div slot="foreground" class="foreground">
 			<div class="spacer"></div>
 			<section><p class="container bx--type-body-long-02 larger-text"> Avec population de 4 227 569 
 				habitants en 2022 (RGPH5), Bamako est la capitale et la plus grande ville du Mali. Située sur le 
@@ -184,6 +184,10 @@
         50% { transform: translateX(-50%) translateY(10px); }
         100% { transform: translateX(-50%) translateY(0); }
     }
+	
+	.foreground {
+    padding: 0 0 0 70%;
+  }
 
 	[slot="background"] {
 		font-size: 1.4em;
@@ -192,28 +196,28 @@
 	}
 	
 	[slot="foreground"] {
-		pointer-events: none;
+		width: 20%;
+		padding: 0;
 	}
 	
 	[slot="foreground"] section {
 		pointer-events: all;
-        width: 80%; /* Allow sections to fill the width of the viewport */
         background-color: #455A64; /* Background color for better readability */
         color: white; /* Text color for contrast */
         padding: 10px 20px; /* Padding around text for better spacing */
         margin-bottom: 400px; /* Space between sections for clarity */
-		width: 100%; /* Use full width */
+		width: auto; /* Use full width */
+		max-width: 100%;
         box-sizing: border-box; /* Include padding in width calculation */
 	}
 	
 	section {
-		height: auto;
 		background-color: #455A64;
 		color: white;
 		padding: 1em;
 		margin: 10px auto;
 		max-width: none;
-		width: 100%;
+		width: auto;
 	}
 
 	section:last-of-type {
@@ -252,10 +256,13 @@
             font-size: 1.2em; /* Smaller text size for readability on smaller devices */
         }
 
-  
+		.foreground {
+			width: 90%;
+		}
+
         section {
             margin: 0 auto 20px; /* Reduced margin */
-			width: 80%;
+			width: 100%;
 			margin: 0 auto 20px; /* Center and space sections */
 			padding: 10px 15px;
         }
@@ -267,12 +274,12 @@
 
         .area-chart-container {
             max-width: 90%; /* More width allowed on smaller screens */
+			margin-bottom: 7em;
         }
 
         .smoky-waste {
             width: 100%; /* Full width for better visibility */
         }
-    	
 
     	@media (max-width: 600px) {
         .title-screen h1 {
@@ -286,5 +293,13 @@
         section {
             width: 90%;
         }
+
+		.foreground {
+			width: 90%;
+		}
+		
+		[slot="foreground"] {
+        padding-left: 10%; /* Minimal padding for small screens */
+    }
     }
 </style>
