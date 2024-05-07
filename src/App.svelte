@@ -196,8 +196,8 @@
 	}
 	
 	[slot="foreground"] {
-		width: 20%;
-		padding: 0;
+		width: 35%;
+		padding: 5em;
 	}
 	
 	[slot="foreground"] section {
