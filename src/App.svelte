@@ -281,6 +281,10 @@
             width: 100%; /* Full width for better visibility */
         }
 
+		[slot="foreground"] {
+        padding-left: 10%; /* Minimal padding for small screens */
+    	}
+
     	@media (max-width: 600px) {
         .title-screen h1 {
             font-size: 1.8em; /* Even smaller font size for very small devices */
@@ -300,6 +304,7 @@
 		
 		[slot="foreground"] {
         padding-left: 10%; /* Minimal padding for small screens */
+		margin-bottom: 400px;
     }
     }
 </style>
