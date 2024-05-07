@@ -46,7 +46,7 @@
 
 		<div slot="foreground" class="foreground">
 			<div class="spacer"></div>
-			<section><p class="container bx--type-body-long-02 larger-text"> Avec population de 4 227 569 
+			<section><p class="container bx--type-body-long-02 larger-text"> Avec une population de 4 227 569 
 				habitants en 2022 (RGPH5), Bamako est la capitale et la plus grande ville du Mali. Située sur le 
 				fleuve Niger, près des rapides qui séparent les vallées du Niger supérieur et moyen, 
 				elle se trouve dans la partie sud-ouest du pays.
