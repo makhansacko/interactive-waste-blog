@@ -1,20 +1,53 @@
+<script>
+    export let language = 'fr';
+    $: console.log("Current language:", language);
+</script>
+
 <div class="container bx--type-body-long-02">
-    <h3 class=" container bx--type-beta-02">Vers un Bamako Plus Propre : Enjeux et 
+    <h3 class=" container bx--type-beta-02">
+        {#if language === 'fr'}
+        Vers un Bamako Plus Propre : Enjeux et 
         Solutions pour la Gestion Durable et Inclusive des Déchets
+        {:else}
+        Towards a Cleaner Bamako: Challenges and
+        Solutions for Sustainable and Inclusive Waste Management
+        {/if}
     </h3>
-    <p>Alors que Bamako s'étend, le nombre et le volume des dépôts de déchets de la ville 
+    <p>
+        {#if language === 'fr'}
+        Alors que Bamako s'étend, le nombre et le volume des dépôts de déchets de la ville 
         ne cessent de croître. Cette réalité soulève des questions critiques quant à l'efficacité 
         des politiques publiques actuelles, malgré leur objectif de réguler et d'améliorer 
-        la gestion des déchets.</p>
+        la gestion des déchets.
+        {:else}
+        As Bamako expands, the number and volume of the city's waste dumps continue to grow.
+        This reality raises critical questions about the effectiveness of current public policies,
+        despite their aim to regulate and improve waste management.
+        {/if}
+    </p>
 
-        <p>Quelles solutions durables à cette problématique? </p>
+        <p>
+            {#if language === 'fr'}
+            Quelles solutions durables à cette problématique?
+            {:else}
+            What sustainable solutions to this issue?
+            {/if}
+        </p>
 
-        <p>Dans un prochain article, en adoptant toujours une perspective systémique, 
+        <p>
+            {#if language === 'fr'}
+            Dans un prochain article, en adoptant toujours une perspective systémique, 
             nous explorerons les politiques publiques nationales et internationales
             de gestion des déchets, les initiatives menées par les acteurs locaux et internationaux, 
             ainsi que les stratégies potentielles pour une gestion plus durable des déchets à 
             Bamako. Restez à l'écoute pour découvrir comment nous pouvons transformer 
             ces défis en opportunités pour l'avenir de la ville.
+            {:else}
+            In an upcoming article, always adopting a systemic perspective, we will explore
+            national and international public policies for waste management, initiatives led by local
+            and international actors, as well as potential strategies for more sustainable waste management in
+            Bamako. Stay tuned to discover how we can transform these challenges into opportunities for the future of the city.
+            {/if}
         </p>
     </div>
     

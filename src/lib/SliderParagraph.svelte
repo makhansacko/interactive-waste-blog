@@ -1,8 +1,26 @@
+<script>
+    export let language = 'fr';
+    $: console.log("Current language:", language);
+</script>
+
 <div class="container bx--type-body-long-02">
-    <h3 class=" container bx--type-beta-02">Visualisation du changement de volume du stock dans le temps</h3>
-    <p>Le visuel interactif que vous trouverez ci-dessous illustre l'évolution du volume du stock de 
+    <h3 class=" container bx--type-beta-02">
+        {#if language === 'fr'}
+        Visualisation du changement de volume du stock dans le temps
+        {:else}
+        Visualisation of the Stock Volume Change Over Time
+        {/if}
+    </h3>
+    <p>
+        {#if language === 'fr'}
+        Le visuel interactif que vous trouverez ci-dessous illustre l'évolution du volume du stock de 
         déchets au fil du temps. En déplaçant le curseur vers la droite ou en clickant sur le bouton play, 
         vous observerez clairement comment le volume a changé entre juillet et décembre 2023.
+        {:else}
+        The interactive visualization below illustrates the change in waste stock volume over time. By moving
+        the slider to the right or clicking the play button, you will clearly see how the volume changed between
+        July and December 2023.
+        {/if}
     </p>
     </div>
     

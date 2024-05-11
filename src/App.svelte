@@ -8,6 +8,10 @@
     import ModelSlider from './lib/ModelSlider.svelte';
 	import SliderParagraph from './lib/SliderParagraph.svelte';
 	import Conclusion from './lib/Conclusion.svelte';
+	import LanguageSwitch from './lib/LanguageSwitch.svelte';
+	import Signature from './lib/Signature.svelte';
+	import {onMount} from 'svelte';
+	
 
 	let count;
 	let index;
@@ -16,19 +20,48 @@
 	let top = 0;
 	let threshold = 0.6;
 	let bottom = 0.9;
+	let language = 'fr';
+
+	function handleLanguageChange(event) {
+        language = event.detail;
+		history.pushState({}, '', `?lang=${language}`);
+    }
+
+	onMount(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const lang = urlParams.get('lang');
+    if (lang) {
+        language = lang;
+    }
+});
 
 </script>
 
 <div class="title-screen container bx--type-body-long-02">
-    <h1>Perspective systémique sur les déchets solides de la ville de Bamako<br>Partie 1: Focus sur les stocks</h1><br>
+    <LanguageSwitch on:languageChanged={handleLanguageChange}/>
+
+	<h1>
+		{#if language === 'fr'}
+		Perspective systémique sur les déchets solides de la ville de Bamako<br>Partie 1: Focus 
+		sur les stocks
+		{:else}
+		Systemic Perspective on Solid Waste in the City of Bamako<br>Part 1: Focus on Stocks
+		{/if}
+	</h1><br>
     <div class="mouse">
         <div class="wheel"></div>
     </div>
-    <p>Défiler vers le bas pour continuer</p>
+    <p>
+		{#if language === 'fr'}
+		Défiler vers le bas pour continuer
+		{:else}
+		Scroll down to continue
+		{/if}
+	</p>
 </div>
 
 	<div>
-	<Introduction/>
+	<Introduction {language}/>
 	</div>
 
 	<Scroller
@@ -46,21 +79,43 @@
 
 		<div slot="foreground" class="foreground">
 			<div class="spacer"></div>
-			<section><p class="container bx--type-body-long-02 larger-text"> Avec une population de 4 227 569 
-				habitants en 2022 (RGPH5), Bamako est la capitale et la plus grande ville du Mali. Située sur le 
+			<section><p class="container bx--type-body-long-02 larger-text"> 
+				{#if language === 'fr'}
+				Avec une population de 4 227 569 
+				habitants en 2022 (RGPH5), Bamako est la capitale et la plus grande ville du Mali. 
+				Située sur le 
 				fleuve Niger, près des rapides qui séparent les vallées du Niger supérieur et moyen, 
 				elle se trouve dans la partie sud-ouest du pays.
+				{:else}
+				With a population of 4,227,569 in 2022 (RGPH5), Bamako is the capital and largest 
+				city of Mali. Located on the Niger River, near the rapids that separate the upper 
+				and middle Niger valleys, it is situated in the southwestern part of the country.
+				{/if}
 				</p></section>
 
-			<section><p class="container bx--type-body-long-02 larger-text stocks">Les données collectées 
+			<section><p class="container bx--type-body-long-02 larger-text stocks">
+				{#if language === 'fr'}
+				Les données collectées 
 				nous ont permis de cartographier 60 stocks de déchets solides repartis dans les différents 
 				quartiers de Bamako. La taille et le volume de ces stocks varient mais comme mentionné
 				plus haut, leur composition reste très similaires.
+				{:else}
+				The data collected allowed us to map 60 solid waste stocks distributed across various 
+				neighborhoods of Bamako. The size and volume of these stocks vary, but as mentioned 
+				earlier, their composition remains very similar.
+				{/if}
 			</p></section>
 			<section>
-				<p class="container bx--type-body-long-02 larger-text">Ces stocks ou dépots de transit sont 
+				<p class="container bx--type-body-long-02 larger-text">
+					{#if language === 'fr'}
+					Ces stocks ou dépots de transit sont 
 					categorisés principalement en deux types: anarchique et autorisé. On s'aperçoit que la 
 					très grande majorité des stocks sont anarchiques, soit 85% des stocks cartographiés.
+					{:else}
+					These stocks or transit depots are mainly categorized into two types: anarchic and 
+					authorized. It is observed that the vast majority of stocks are anarchic, 
+					accounting for 85% of the mapped stocks.
+					{/if}
 					</p>
 				{#if index >= 2}
                     <div id="legend">
@@ -68,36 +123,61 @@
 							<span style="background-color: #cea282; display: 
 							inline-block; width: 10px; height: 10px; margin-right: 10px;">
 							</span>
+							{#if language === 'fr'}
 							Anarchique
+							{:else}
+							Anarchic
+							{/if}
 						</div>
                         <div class="bx--type-body-long-02 larger-text">
 							<span style="background-color: #388E3C; display: inline-block; 
 							width: 10px; height: 10px; margin-right: 10px;">
 						</span>
+						{#if language === 'fr'}
 						Autorisé
+						{:else}
+						Authorized
+						{/if}
 						</div>
                     </div>
                 {/if}
 			</section>
-			<section><p class="container bx--type-body-long-02 larger-text">Nous avons accordé une 
+			<section><p class="container bx--type-body-long-02 larger-text">
+				{#if language === 'fr'}
+				Nous avons accordé une 
 				attention particulière au dépôt de transit anarchique situé près de l'Université de 
 				Bamako, également connu sous le nom de "la colline du savoir". Ce dépôt, qui s'étend 
 				sur une superficie et une hauteur comparable à celle d'une colline, fait partie intégrante du 
 				paysage urbain et académique de la ville depuis de nombreuses années. Comme illustré 
 				sur la carte, ce site est situé à proximité immédiate de l'université, 
 				avec les bâtiments universitaires visibles à droite du dépôt.
+				{:else}
+				We paid particular attention to the anarchic transit depot located near the 
+				University of Bamako, also known as "the hill of knowledge". This depot, 
+				which extends over an area and height comparable to that of a hill, has been 
+				an integral part of the urban and academic landscape of the city for many years. 
+				As illustrated on the map, this site is located in the immediate vicinity of 
+				the university, with university buildings visible to the right of the depot.
+				{/if}
 			</p></section>
-			<section><p class="container bx--type-body-long-02 larger-text">Avec un flux constant de 
+			<section><p class="container bx--type-body-long-02 larger-text">
+				{#if language === 'fr'}
+				Avec un flux constant de 
 				déchets solides transportés par les GIE et charretiers individuels, comment évolue 
 				le volume de ce stock au fil du temps ? Nous avons exploré cette question pour y 
-				apporter des réponses concrètes.
+				apporter une réponse.
+				{:else}
+				With a constant flow of solid waste transported by GIEs and individual carters,
+				how does the volume of this stock change over time? We explored this question to
+				provide an answer.
+				{/if}
 			</p></section>
 
 		</div>
 	</Scroller>
 
 	<div class="bx--type-body-long-01">
-	<ChartParagraph/>
+	<ChartParagraph {language}/>
 	</div>
 
 	<div class="area-chart-container">
@@ -105,16 +185,18 @@
 	</div>
 
 	<div class="bx--type-body-long-01">
-	<SliderParagraph/>
+	<SliderParagraph {language}/>
 	</div>
 
 	<ModelSlider/>
 
-	<Conclusion />
+	<Conclusion {language}/>
 
 	<div>
 	<img class= "smoky-waste" src='/smoking_waste.jpg' alt="Smoking waste">
 	</div>
+
+<Signature name= "Makhan Sacko" />
 
 <style>
 	.title-screen {

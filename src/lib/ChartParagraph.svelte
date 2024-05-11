@@ -1,12 +1,29 @@
+<script>
+    export let language = 'fr';
+    $: console.log("Current language:", language);
+</script>
+
 <div class="container bx--type-body-long-02">
-    <h3 class=" container bx--type-beta-02">Le changement de volume du stock</h3>
-    <p>Entre juillet et décembre 2023, j'ai réalisé des prises de vue hebdomadaires en 
+    <h3 class=" container bx--type-beta-02">
+        {#if language === 'fr'}
+        Le changement de volume du stock
+        {:else}
+        Change in the Stock Volume
+        {/if}
+    </h3>
+    <p>
+        {#if language === 'fr'}    
+        Entre juillet et décembre 2023, j'ai réalisé des prises de vue hebdomadaires en 
         360 degrés du stock de déchets à l'aide d'un drone. Ces images ont été utilisées 
         pour générer des modèles 3D et des modèles d'élévation numérique par photogrammétrie, 
         permettant ainsi de mesurer le volume du stock. Comme vous pouvez le 
         voir sur le graphique ci-dessous, le volume du stock est passé de 122 732 m³ le 
         15 juillet à 135 984 m³ le 2 décembre 2023, illustrant une augmentation significative 
-        sur cette période. </p>
+        sur cette période. 
+        {:else}
+        Between July and December 2023, I conducted weekly 360-degree drone footage of the waste stockpile. These images were used to generate 3D models and digital elevation models through photogrammetry, allowing the volume of the stockpile to be measured. As you can see in the chart below, the volume of the stockpile increased from 122,732 m³ on July 15 to 135,984 m³ on December 2, 2023, showing a significant increase over this period.
+        {/if}
+    </p>
     </div>
     
         <style>
